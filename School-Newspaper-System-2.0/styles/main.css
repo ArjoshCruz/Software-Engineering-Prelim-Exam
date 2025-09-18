@@ -1,0 +1,295 @@
+body {
+    font-family: "Arial";
+
+}
+
+nav {
+    background-color: #1e3a8a;
+}
+/* Circle logo styling */
+.logo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.logo-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+}
+
+nav div h1 {
+    font-weight: bold;
+    font-size: 48px;
+}
+
+main {
+    background-color: rgba(245, 245, 245, 0.95);
+    background-image: 
+        linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px);
+    background-size: 20px 20px;
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+/* Welcome Message Styling */
+.welcome-message {
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 8px 25px rgba(30, 58, 138, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.welcome-message::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    transform: translateX(-100%);
+    animation: shimmer 3s infinite;
+}
+
+@keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.welcome-message h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    position: relative;
+    z-index: 1;
+}
+
+/* Panel Styling */
+.writer-panel, .admin-panel {
+    background: white;
+    border: 2px solid;
+    border-radius: 8px;
+    padding: 0;
+    margin: 1rem;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.writer-panel {
+    border-color: #28a745;
+}
+
+.admin-panel {
+    border-color: #007bff;
+}
+
+/* Panel Headers */
+.panel-header {
+    background: white;
+    border: 2px solid;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    margin: -1rem 1rem 0 1rem;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+}
+
+.writer-header {
+    border-color: #28a745;
+}
+
+.admin-header {
+    border-color: #007bff;
+}
+
+.panel-header h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Panel Content */
+.panel-content {
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.panel-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+.panel-text {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+/* Login Buttons */
+.btn-login {
+    border: 2px solid;
+    border-radius: 25px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.writer-btn {
+    border-color: #28a745;
+    color: #28a745;
+}
+
+.writer-btn:hover {
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+}
+
+.admin-btn {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.admin-btn:hover {
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+/* Articles Section Styling */
+.articles-section {
+    margin-top: 3rem;
+}
+
+.articles-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.articles-header h2 {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    margin: 0;
+}
+
+.article-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.article-content {
+    padding: 2rem;
+}
+
+.admin-tag {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 10;
+}
+
+.article-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.article-meta {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.article-description {
+    color: #333;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.article-image-container {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.article-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.article-image:hover {
+    transform: scale(1.02);
+}
+
+main {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+}
+
+/* background overlay */
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("../images/bg2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.3;   
+    z-index: -1; 
+}

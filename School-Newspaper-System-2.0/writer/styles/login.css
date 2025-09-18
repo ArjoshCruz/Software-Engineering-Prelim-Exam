@@ -1,0 +1,68 @@
+body {
+    font-family: "Arial", sans-serif;
+    background: url("https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0") no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    border: none;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.9); /* slight transparency */
+  }
+
+  .card-header {
+    background: transparent;
+    border-bottom: none;
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  .card-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .form-control {
+    border-radius: 10px;
+    padding: 12px;
+  }
+
+  .btn-primary {
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background: #007bff;
+    border: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-primary:hover {
+    background: #0056b3;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .alert-message {
+    font-size: 0.95rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+
+  .alert-success {
+    color: green;
+  }
+
+  .alert-error {
+    color: red;
+  }

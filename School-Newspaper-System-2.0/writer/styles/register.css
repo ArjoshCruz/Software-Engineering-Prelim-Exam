@@ -1,0 +1,68 @@
+body {
+  font-family: "Arial", sans-serif;
+  background: url("https://img.freepik.com/premium-photo/pastel-tone-purple-pink-blue-gradient-defocused-abstract-photo-smooth-lines_49683-4702.jpg?w=1380") no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.95); /* semi-transparent */
+}
+
+.card-header {
+  background: transparent;
+  border-bottom: none;
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-control {
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.btn-primary {
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background: #6f42c1; /* purple tone to match bg */
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+  background: #4b2a82;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.alert-message {
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.alert-success {
+  color: green;
+}
+
+.alert-error {
+  color: red;
+}
